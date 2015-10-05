@@ -21,16 +21,11 @@
   float: left;
   display: flex; }
 
-.penalty,
-.goal {
-  align-self: center;
-  display: flex; }
-
 .penalty {
   width: 132px;
   height: 320px;
-  position: relative;
-  border: 1px solid white; }
+  border: 1px solid white;
+  position: relative; }
   .penalty:after {
     content: "";
     position: absolute;
@@ -77,5 +72,9 @@
   .half:nth-child(2) .center {
     right: 20px;
     left: auto; }
+
+.penalty, .goal {
+  align-self: center;
+  display: flex; }
 
 /*# sourceMappingURL=styles.css.map */

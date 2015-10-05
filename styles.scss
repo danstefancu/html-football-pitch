@@ -1,5 +1,7 @@
 // how big?
 $meter: 8px;
+$width: 65;
+$length: 102;
 
 @function meters( $distance ) {
   $value : $distance * $meter;
@@ -12,8 +14,8 @@ $meter: 8px;
 }
 .surface {
   background: green;
-  height: meters(65);
-  width: meters(102);
+  height: meters($width);
+  width: meters($length);
 
   position: relative;
   margin: 0 auto;
@@ -32,18 +34,12 @@ $meter: 8px;
   float: left;
   display: flex;
 }
-.penalty,
-.goal {
-  align-self: center;
-  display: flex;
-}
-
 .penalty {
   width: meters(16.5);
   height: meters(40);
-  position: relative;
   border: meters(0.12) solid white;
-
+  position: relative;
+  @extend %alignment;
 
   // just to hide the round next to penalty area
   &:after {
@@ -66,6 +62,7 @@ $meter: 8px;
   width: meters(5.5);
   height: meters(18);
   border: meters(0.12) solid white;
+  @extend %alignment;
 }
 .center {
   width: meters(18);
@@ -79,6 +76,7 @@ $meter: 8px;
   top: calc(50% - #{$radius});
   right: calc(50% - #{$radius});
 }
+
 .half:nth-child(1) {
   border-right: meters(0.12) solid white;
 
@@ -107,4 +105,8 @@ $meter: 8px;
     right: meters(2.5);
     left: auto;
   }
+}
+%alignment {
+  align-self: center;
+  display: flex;
 }
