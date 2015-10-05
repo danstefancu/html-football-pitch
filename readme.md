@@ -10,3 +10,7 @@ It looks like this (based on Edgeley Park, Stockport):
 
 1. git clone
 2. open in browser
+
+## Live preview
+
+[There you go](http://danstefancu.github.io/html-football-pitch/).
