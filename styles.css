@@ -77,4 +77,84 @@
   align-self: center;
   display: flex; }
 
+.player {
+  width: 6px;
+  height: 6px;
+  border: 1px solid black;
+  border-radius: 100%;
+  z-index: 50;
+  position: absolute; }
+
+#team1 .player {
+  background: blue; }
+#team1 .player:nth-child(1) {
+  top: 50%;
+  left: 2%; }
+#team1 .player:nth-child(2) {
+  bottom: 20%;
+  left: 25%; }
+#team1 .player:nth-child(3) {
+  bottom: 40%;
+  left: 20%; }
+#team1 .player:nth-child(4) {
+  top: 40%;
+  left: 20%; }
+#team1 .player:nth-child(5) {
+  top: 20%;
+  left: 25%; }
+#team1 .player:nth-child(6) {
+  bottom: 35%;
+  left: 40%; }
+#team1 .player:nth-child(7) {
+  top: 35%;
+  left: 40%; }
+#team1 .player:nth-child(8) {
+  left: 45%;
+  bottom: 15%; }
+#team1 .player:nth-child(9) {
+  left: 60%;
+  top: 35%; }
+#team1 .player:nth-child(10) {
+  left: 45%;
+  top: 15%; }
+#team1 .player:nth-child(11) {
+  left: 60%;
+  bottom: 35%; }
+
+#team2 .player {
+  background: white; }
+#team2 .player:nth-child(1) {
+  top: 50%;
+  right: 7%; }
+#team2 .player:nth-child(2) {
+  bottom: 20%;
+  right: 30%; }
+#team2 .player:nth-child(3) {
+  bottom: 40%;
+  right: 25%; }
+#team2 .player:nth-child(4) {
+  top: 40%;
+  right: 25%; }
+#team2 .player:nth-child(5) {
+  top: 20%;
+  right: 30%; }
+#team2 .player:nth-child(6) {
+  bottom: 35%;
+  right: 45%; }
+#team2 .player:nth-child(7) {
+  top: 35%;
+  right: 45%; }
+#team2 .player:nth-child(8) {
+  right: 50%;
+  bottom: 15%; }
+#team2 .player:nth-child(9) {
+  right: 65%;
+  top: 35%; }
+#team2 .player:nth-child(10) {
+  right: 50%;
+  top: 15%; }
+#team2 .player:nth-child(11) {
+  right: 65%;
+  bottom: 35%; }
+
 /*# sourceMappingURL=styles.css.map */

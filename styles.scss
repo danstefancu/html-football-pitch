@@ -110,3 +110,29 @@ $length: 102;
   align-self: center;
   display: flex;
 }
+
+@import "4-4-2";
+
+
+.player {
+  width: 6px;
+  height: 6px;
+  border: 1px solid black;
+  border-radius: 100%;
+  z-index: 50;
+  position: absolute;
+}
+
+#team1 {
+  .player {
+    background: blue;
+  }
+  @include team-4-4-2(left, 0);
+}
+
+#team2 {
+  .player {
+    background: white;
+  }
+  @include team-4-4-2(right, 5%);
+}

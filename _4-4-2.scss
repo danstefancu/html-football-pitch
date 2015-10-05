@@ -1,0 +1,46 @@
+@mixin team-4-4-2($direction, $margin: 0) {
+  .player:nth-child(1) {
+    top: 50%;
+    #{$direction}: 2% + $margin;
+  }
+  .player:nth-child(2) {
+    bottom: 20%;
+    #{$direction}: 25% + $margin;
+  }
+  .player:nth-child(3) {
+    bottom: 40%;
+    #{$direction}: 20% + $margin;
+  }
+  .player:nth-child(4) {
+    top: 40%;
+    #{$direction}: 20% + $margin;
+  }
+  .player:nth-child(5) {
+    top: 20%;
+    #{$direction}: 25% + $margin;
+  }
+  .player:nth-child(6) {
+    bottom: 35%;
+    #{$direction}: 40% + $margin;
+  }
+  .player:nth-child(7) {
+    top: 35%;
+    #{$direction}: 40% + $margin;
+  }
+  .player:nth-child(8) {
+    #{$direction}: 45% + $margin;
+    bottom: 15%
+  }
+  .player:nth-child(9) {
+    #{$direction}: 60% + $margin;
+    top: 35%;
+  }
+  .player:nth-child(10) {
+    #{$direction}: 45% + $margin;
+    top: 15%;
+  }
+  .player:nth-child(11) {
+    #{$direction}: 60% + $margin;
+    bottom: 35%;
+  }
+}
